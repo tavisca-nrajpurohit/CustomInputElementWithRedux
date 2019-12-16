@@ -1,0 +1,13 @@
+<div class="customInput">
+    <label>{{label}}</label>
+    <input
+        type="text" 
+        [placeholder]="label"
+        required 
+        [name]="propPath" 
+        (focusin) = "CustomInputIsFocussed()"
+        (focusout) = "CustomInputIsNotFocussed()"
+        (keyup) = "CustomInputValueChanged()"
+        [(ngModel)]="value"
+     >
+</div>
